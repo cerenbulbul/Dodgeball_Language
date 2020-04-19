@@ -1,0 +1,138 @@
+STARTGAME
+
+
+//STARTS PROGRAM WITH THIS TOKEN//
+
+
+PRINT: "LETS START GAME"
+
+CREATE SEVDA ESCAPER(7) 
+
+CREATE ROBI ESCAPER(9)
+
+CREATE CEREN THROWER(8)
+
+CREATE BOB THROWER(6)
+
+
+
+
+//HEALTH = 10 FOR SEVDA DEFAULT//
+
+s = 10
+PRINT:"SEVDA's health is " PRINT:s
+
+AS s>2
+
+IFPROVIDE SEVDA(7) > CEREN(8) + (5.5) 
+
+   IFPROVIDE SEVDA CATCHING 
+	s=s+2
+      
+
+   OTHERWISE
+      SEVDA ESCAPING      
+
+OTHERWISE
+
+DIE SEVDA
+
+s = s - 2
+
+
+//HEALTH = 10 FOR ROBI DEFAULT//
+
+
+r = 10
+
+AS r>=2
+
+t = t + 2 
+
+BOB THROWING(2.4)
+
+AS r > 2
+
+IFPROVIDE ROBI(9) > BOB(6) + (2.4) 
+
+   IFPROVIDE ROBI CATCHING
+      r = r + 2
+
+   OTHERWISE
+      ROBI ESCAPING      
+
+OTHERWISE
+
+DIE ROBI
+
+
+r = r - 2
+
+
+CHANGE //Change A team thrower and B team escaper//
+
+//HEALTH = 10 FOR CEREN DEFAULT//
+
+c = 10
+
+
+AS c>=2
+
+z = z + 2 
+
+SEVDA THROWING(3.2)
+
+IFPROVIDE  CEREN(8) > SEVDA(7) + (3.2)
+
+   IFPROVIDE CEREN CATCHING
+      c = c + 2
+
+   OTHERWISE
+      CEREN ESCAPING      
+
+OTHERWISE
+
+DIE CEREN
+
+c = c - 2
+
+
+//HEALTH = 10 FOR BOB DEFAULT//
+
+b = 10
+
+AS b>=2
+
+z = z + 2 
+
+ROBI THROWING(5.0)
+
+IFPROVIDE BOB(6) > ROBI(9) + (5.0) 
+
+   IFPROVIDE BOB CATCHING
+      r = r + 2
+
+   OTHERWISE
+      BOB ESCAPING      
+
+OTHERWISE
+
+DIE BOB
+
+b = b - 2
+
+
+IFPROVIDE z > t 
+    B WIN AND A LOST
+
+OTHERWISE
+    DRAW
+    
+
+ENDGAME
+
+
+
+//ENDS PROGRAM WITH THIS TOKEN//
+
+
