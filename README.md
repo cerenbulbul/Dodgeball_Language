@@ -7,14 +7,17 @@
 **How it runs?**
 
 - make dodgeball
-- ./dodgeball < example1.ddg
-- ./dodgeball < example2.ddg
+- ./dodgeball2 < example1.ddg
+- ./dodgeball2 < example2.ddg
 
 &nbsp;
 &nbsp;
 &nbsp;
 
 1. [ Project's BNF Form ](#BNF)
+   * [Blocks and Commands](#commands)
+   * [Expressions](#expressions)
+   * [Types](#types)
 2. [ Explanation of the Sysntax ](#ExplanationSysntax)
 3. [ Any design decisions you make ](#Design) 
 
@@ -23,6 +26,8 @@
 <a name="BNF"></a>
 ## Project's BNF Form
 
+&nbsp;
+<a name="commands"></a>
 ### Blocks and Commands ###
 
 * < program > : program < statements > program  |  **STARTGAME** program  |  **ENDGAME**  | error
@@ -76,7 +81,7 @@
 * < resultStatement > : **TEAM GAMERESULT AND TEAM GAMERESULT** | **GAMERESULT**
 
 &nbsp;
-
+<a name="expressions"></a>
 ### Expressions ###
 
 * < expression > : comparisonExpression | | actionExpression | orExpression| andExpression | boolExpression
@@ -97,7 +102,7 @@
 
 
 &nbsp;
-
+<a name="types"></a>
 ### Types ###
 
 * < numericType > : **STRENGTH** | **HEALTH** | **BALLSPEED** | **INTEGER**
@@ -105,7 +110,7 @@
 * < term >  : **INTEGER**  | **IDENTIFIER**
 
 
-:arrow_right: **Hint:** Bold text is token.
+:arrow_right: Bold text is token.
 
 
 
