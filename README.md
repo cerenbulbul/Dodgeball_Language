@@ -261,5 +261,13 @@ ENDGAME
 ```
 > 3
 
+:arrow_forward: It is included in the "error handling" section of this language. If you enter something wrong, the "Wrong Grammar" error works.
+
+```
+STARTGAME
+ASdsks;
+```
+> Wrong Gramer
+
 <a name="Design"></a>
 ## Any design decisions you make
