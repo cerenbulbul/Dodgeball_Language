@@ -156,6 +156,7 @@ PRINT:a
 ENDGAME
 ```
 > LET'S START GAME
+
 > 5
 
 :arrow_forward: "AS" operation works like a loop. After the AS keyword, an expression followed by statements.
@@ -218,6 +219,7 @@ STARTGAME
 ENDGAME
 ```
 > TRUE
+
 > FALSE
 
 :arrow_forward: There are IF-ELSE statements for numerical expressions. This is not used in the game.
@@ -241,9 +243,13 @@ WHILE i<6 RETURN s+2;
 ENDGAME
 ```
 > 3
+
 > 3
+
 > 3
+
 > 3
+
 > 21
 
 :arrow_forward: There is function statement. It can be used like method. The function statement has keywords. These are; FUN and a function name(it must be lowercase) and RETURN.
