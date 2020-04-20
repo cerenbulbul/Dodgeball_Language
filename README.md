@@ -130,6 +130,8 @@ STARTGAME
 ENDGAME
 ```
 
+:arrow_forward: Comment process is written between 2 //.
+
 :arrow_forward: There are several different ways you can create a child. You can create without specifying any feature, you can also create by specifying the team or role.
 
 ```
@@ -138,8 +140,108 @@ CREATE SEVDA
 CREATE CEREN ESCAPER(8)
 ENDGAME
 ```
+> Created: SEVDA 
 
-:arrow_forward: 
+> Created: CEREN
+
+:arrow_forward: There are assignments. A number can be assigned to an identifier.
+
+:arrow_forward: Any string or numeric expressions can be printed. But the formats of string and numerical expressions are different.
+
+```
+STARTGAME
+a = 5
+PRINT:"LET'S START GAME"
+PRINT:a
+ENDGAME
+```
+
+:arrow_forward: "AS" operation works like a loop. After the AS keyword, an expression followed by statements.
+
+```
+STARTGAME
+s = 10
+AS s > 2
+  PRINT:"AS STATEMENT" 
+  s = s+2
+ENDGAME
+```
+
+:arrow_forward: The "IFPROVIDE - OTHERWISE" process is used to compare the characteristics of two children. After IFPROVIDE, expression statements must write. After OTHERWISE a statement must write.
+
+```
+STARTGAME
+IFPROVIDE SEVDA CATCHING
+  s = s +5
+OTHERWISE
+  SEVDA ESCAPING
+ENDGAME
+```
+
+:arrow_forward: A child should die when its health is finished.
+
+```
+STARTGAME
+DIE SEVDA
+ENDGAME
+```
+
+:arrow_forward: Children have actions. These are THROWING, ESCAPING, CATCHING. Also, these actions can be numeric types. For example, Throwing takes float numeric type(ballspeed). However, escaping and catching dont take any numeric type.
+
+```
+STARTGAME
+BOB THROWING(4.6)
+ROBI ESCAPING
+ENDGAME
+```
+
+:arrow_forward: There are keywords to identify the winner or the loser when the game is over. These are; WIN, WON and DRAW. These are used for Teams.
+
+```
+STARTGAME
+IFPROVIDE a < b 
+  B WIN AND A LOST
+OTHERWISE
+  DRAW
+ENDGMAE
+```
+
+:arrow_forward: It detects Boolean operations.
+
+```
+STARTGAME 
+3==3
+4>=6
+ENDGAME
+```
+
+:arrow_forward: There are IF-ELSE statements for numerical expressions. This is not used in the game.
+
+```
+STARTGAME
+IF 3<6 3 ELSE 6
+ENDGAME
+```
+
+:arrow_forward: There is WHILE statement for numerical expressions. This While operation usues with semicolon. This is not used in the game. 
+
+```
+STARTGAME
+WHILE 3<7 RETURN PRINT:3;
+
+i=5
+s = 5
+WHILE i<6 RETURN s+2;
+ENDGAME
+```
+
+:arrow_forward: There is function statement. It can be used like method. The function statement has keywords. These are; FUN and a function name(it must be lowercase) and RETURN.
+
+```
+STARTGAME
+FUN functionname: IF 2>3 2 ELSE 3; RETURN a = 3-2;
+ENDGAME
+```
 
 
 <a name="Design"></a>
