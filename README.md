@@ -261,7 +261,7 @@ ENDGAME
 ```
 > 3
 
-:arrow_forward: It is included in the "error handling" section of this language. If you enter something wrong, the "Wrong Grammar" error works.
+:arrow_forward: It is included in the "error handling" section of this language. If you enter something wrong, the "Wrong Grammar" error works. Making a mistake will not shut down the system. After receiving the error message, writing code can continue.
 
 ```
 STARTGAME
@@ -269,5 +269,24 @@ ASdsks;
 ```
 > Wrong Gramer
 
+
+
+&nbsp;
 <a name="Design"></a>
 ## Any design decisions you make
+
+This language, as the name implies, is a language made for "dodgeball" game. It is a language inspired by the movements, players and situations made while playing this game. At the same time, primitive calculations can be done in boolean operations, if else, function definition and loop. There are some features that distinguish this language from other languages and make it good: 
+
+:small_orange_diamond: Features that are not available in other languages have been added in this language. With these features, processes that take a very long time can be done in a short time.
+
+:small_orange_diamond: It is easy for people to perceive and understand because it is very similar to the daily writing language.
+
+:small_orange_diamond: Since there is an error handling, the system does not throw itself out in every written error. After making the mistake, you can continue to correct the error and write code.
+
+:small_orange_diamond: Apart from being a different language, transactions in primitive languages are also included. Thus, it is a language that will be more familiar to people.
+
+:small_orange_diamond: Instant transactions can be printed. In this way, you will understand and see if your code is going wrong or not.
+
+
+
+
