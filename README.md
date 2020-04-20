@@ -14,17 +14,17 @@
 &nbsp;
 &nbsp;
 
-1. [ Project's BNF Form ](#BNF)
+1. [ BNF Form ](#BNF)
    * [Blocks and Commands](#commands)
    * [Expressions](#expressions)
    * [Types](#types)
-2. [ Explanation of the Sysntax ](#ExplanationSysntax)
-3. [ Any design decisions you make ](#Design) 
+2. [ Explanation Of the Sysntax ](#ExplanationSysntax)
+3. [ Design Features ](#Design) 
 
 &nbsp;
 &nbsp;
 <a name="BNF"></a>
-## Project's BNF Form
+## BNF Form
 
 &nbsp;
 <a name="commands"></a>
@@ -120,7 +120,7 @@
 
 &nbsp;
 <a name="ExplanationSysntax"></a>
-## Explanation of the Sysntax
+## Explanation Of the Sysntax
 
 :arrow_forward: First of all, to start writing code, **STARTGAME** should be written in ddg language. Also, **ENDGAME** should be written when your code runs out.
 
@@ -273,7 +273,7 @@ ASdsks;
 
 &nbsp;
 <a name="Design"></a>
-## Any design decisions you make
+## Design Features
 
 This language, as the name implies, is a language made for "dodgeball" game. It is a language inspired by the movements, players and situations made while playing this game. At the same time, primitive calculations can be done in boolean operations, if else, function definition and loop. There are some features that distinguish this language from other languages and make it good: 
 
