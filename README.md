@@ -122,6 +122,25 @@
 <a name="ExplanationSysntax"></a>
 ## Explanation of the Sysntax
 
+:arrow_forward: First of all, to start writing code, **STARTGAME** should be written in ddg language. Also, **ENDGAME** should be written when your code runs out.
+
+```
+STARTGAME
+//something//
+ENDGAME
+```
+
+:arrow_forward: There are several different ways you can create a child. You can create without specifying any feature, you can also create by specifying the team or role.
+
+```
+STARTGAME
+CREATE SEVDA
+CREATE CEREN ESCAPER(8)
+ENDGAME
+```
+
+:arrow_forward: 
+
 
 <a name="Design"></a>
 ## Any design decisions you make
