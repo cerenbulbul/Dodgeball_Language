@@ -155,6 +155,8 @@ PRINT:"LET'S START GAME"
 PRINT:a
 ENDGAME
 ```
+> LET'S START GAME
+> 5
 
 :arrow_forward: "AS" operation works like a loop. After the AS keyword, an expression followed by statements.
 
@@ -162,7 +164,7 @@ ENDGAME
 STARTGAME
 s = 10
 AS s > 2
-  PRINT:"AS STATEMENT" 
+  //something//
   s = s+2
 ENDGAME
 ```
@@ -185,6 +187,7 @@ STARTGAME
 DIE SEVDA
 ENDGAME
 ```
+> died: SEVDA
 
 :arrow_forward: Children have actions. These are THROWING, ESCAPING, CATCHING. Also, these actions can be numeric types. For example, Throwing takes float numeric type(ballspeed). However, escaping and catching dont take any numeric type.
 
@@ -214,6 +217,8 @@ STARTGAME
 4>=6
 ENDGAME
 ```
+> TRUE
+> FALSE
 
 :arrow_forward: There are IF-ELSE statements for numerical expressions. This is not used in the game.
 
@@ -222,6 +227,7 @@ STARTGAME
 IF 3<6 3 ELSE 6
 ENDGAME
 ```
+> 3
 
 :arrow_forward: There is WHILE statement for numerical expressions. This While operation usues with semicolon. This is not used in the game. 
 
@@ -229,11 +235,16 @@ ENDGAME
 STARTGAME
 WHILE 3<7 RETURN PRINT:3;
 
-i=5
+i = 3
 s = 5
 WHILE i<6 RETURN s+2;
 ENDGAME
 ```
+> 3
+> 3
+> 3
+> 3
+> 21
 
 :arrow_forward: There is function statement. It can be used like method. The function statement has keywords. These are; FUN and a function name(it must be lowercase) and RETURN.
 
@@ -242,7 +253,7 @@ STARTGAME
 FUN functionname: IF 2>3 2 ELSE 3; RETURN a = 3-2;
 ENDGAME
 ```
-
+> 3
 
 <a name="Design"></a>
 ## Any design decisions you make
